@@ -31,4 +31,16 @@ $("#searchButtonElement").click(function () {
     main('Search');
 });
 
+$("#searchElement").keypress(function(e) {
+    if(e.which == 13) {
+        $(".nav-link").removeClass("active");
+        $('anime-list').hide();
+        $('about-me').hide();
+        document.getElementById("section-title").innerHTML = "Searching " + $("#searchElement").val();
+        main('Search');
+    }
 });
+
+});
+
+
