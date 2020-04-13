@@ -7,10 +7,9 @@ class AnimeList extends HTMLElement {
   }
 
    set dataresult(dataresult) {
-       this._dataresult = dataresult;
-       //console.log(this._dataresult.Page.media);
-       this.render();
-
+      const searchElement = document.querySelector("#searchElement");
+      this._dataresult = dataresult;
+      this.render();
    }
  
    renderError(message) {
@@ -133,12 +132,28 @@ class AnimeList extends HTMLElement {
 
               $('anime-list').show();
 
-       this._dataresult.Page.media.forEach(media => {
-          const movieItemElement = document.createElement("movie-item");
-          movieItemElement.className = "col-xs-12 col-sm-12 col-md-6 col-lg-4 item-list";
-           movieItemElement.movie = media;
-           this.appendChild(movieItemElement);
-       })
+              if(searchElement.value == ""){
+                this._dataresult.Page.media.forEach(media => {
+                  const animeItemElement = document.createElement("anime-item");
+                  animeItemElement.className = "col-xs-12 col-sm-12 col-md-6 col-lg-4 item-list";
+                  animeItemElement.anime = media;
+                  this.appendChild(animeItemElement);
+                })
+              } else {
+                this._dataresult.media.forEach(media => {
+                  const anilistDB = require('anilist-node');
+                  const AnilistDB = new anilistDB();
+                  const animeItemElement = document.createElement("anime-item");
+
+                  document.getElementById('searchElement').value = '';
+                  animeItemElement.className = "col-xs-12 col-sm-12 col-md-6 col-lg-4 item-list";
+                  AnilistDB.media.anime(media.id).then(data => {
+                      animeItemElement.anime = data;
+                  });
+                  this.appendChild(animeItemElement);
+                    
+                })
+              }
    }
 }
  

@@ -1,6 +1,7 @@
 import "regenerator-runtime";
 import "./src/css/styles.css";
 import "./src/js/component/sidebar.js";
+import "./src/js/component/searchbar.js";
 import "./src/js/component/aboutme.js";
 import main from "./src/js/view/main.js";
 
@@ -20,6 +21,14 @@ $(".nav-link").click(function () {
     	document.getElementById('section-title').innerHTML = "" + $(this).attr('target') + " Movies";
     	main('' + $(this).attr('target'));
 	}; 
+});
+
+$("#searchButtonElement").click(function () {
+	$(".nav-link").removeClass("active");
+	$('anime-list').hide();
+    $('about-me').hide();
+    document.getElementById("section-title").innerHTML = "Searching " + $("#searchElement").val();
+    main('Search');
 });
 
 });
