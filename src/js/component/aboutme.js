@@ -18,8 +18,8 @@ class AboutMe extends HTMLElement {
                   }
 
                   about-me img {
-                    width: 13vw;
-                    height: 13vw;
+                    width: 10em;
+                    height: 10em;
                     background-color: #3a3a3a;
                     border-radius: 100%;
                     border: solid 1px rgba(58 , 58 , 58 , 0.4);
@@ -34,16 +34,17 @@ class AboutMe extends HTMLElement {
                   about-me table, about-me th, about-me td {
                     text-align: left;
                     vertical-align: baseline;
+                    padding: 0px 4px;
                   }
 
-                  @media (max-width: 720px) {
+                  @media only screen and (min-width: 0px) and (max-width: 720px) {
                     about-me h2 {
                       font-size: 1.5rem !important;
                     }
 
                     about-me img {
-                      width: 13vw;
-                      height: 13vw;
+                      width: 6em;
+                      height: 6em;
                       background-color: #3a3a3a;
                       border-radius: 100%;
                       border: solid 1px rgba(58 , 58 , 58 , 0.4);
@@ -58,9 +59,9 @@ class AboutMe extends HTMLElement {
                 </style>
 
                   <figure>
-                    <img src="/dist/assets/images/avatar.jpg" alt="RA121514">
+                    <img src="/dist/assets/images/ra121514.jpg" alt="RA121514">
                   </figure>
-                  <h2>RA121514</h2>
+                  <h2>Riski Mardhianto</h2>
                   <p style="margin: -10px 0px 20px 0px;">A Passion-Confussed Boy</p>
                   <section>
                     <table>
