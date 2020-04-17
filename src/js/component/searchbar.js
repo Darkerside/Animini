@@ -15,10 +15,13 @@ class SearchBar extends HTMLElement {
 
        </style>
 
+        
         <div class="btn-toolbar mb-0 col-md-4 pr-md-0 pl-md-0">
-          <div class="btn-group mr-2 w-100 pr-md-0 pl-md-0">
-            <input type="text" id="searchElement" placeholder="Search Anime" type="search" class="w-100">
-            <button type="submit" id="searchButtonElement" type="submit" class="btn btn-sm btn-outline-secondary">Search</button>
+          <div class="input-group input-group-sm mb-3 mr-2 w-100 pr-md-0 pl-md-0">
+            <input type="text" class="form-control border-secondary" id="searchElement" placeholder="Search Anime">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-secondary" id="searchButtonElement" type="button">Search</button>
+            </div>
           </div>
         </div>
 
