@@ -2,9 +2,10 @@ import '../component/animelist.js';
 import DataSource from '../data/data-source.js';
  
 function main(keyword){
+  keyword = keyword.toUpperCase();
 	const searchElement = document.querySelector("#searchElement");
 
-	if(keyword == "Search"){
+	if(keyword === "SEARCH"){
 		const anilist = require('anilist-node');
 		const Anilist = new anilist();
 

@@ -15,7 +15,7 @@ $(".nav-link").click(function () {
     $('anime-list').hide();
     $('about-me').hide();
     $('' + $(this).attr('target')).show();
-    if ($(this).attr('target') == "about-me"){
+    if ($(this).attr('target') === "about-me"){
 		document.getElementById("section-title").innerHTML = "About Me";
 	} else {
     	document.getElementById('section-title').innerHTML = "" + $(this).attr('target') + " Movies";
