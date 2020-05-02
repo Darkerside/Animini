@@ -45,7 +45,7 @@ class AnimeItem extends HTMLElement {
 
       this.innerHTML = `
  
-                  <div class="card">
+                  <div class="card border-secondary">
                     <div class="row no-gutters">
                       <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 anime-cover">
                         <img src="${this._anime.coverImage.large}" class="card-img" alt="${this._anime.title.romaji}">

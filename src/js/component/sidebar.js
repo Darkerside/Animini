@@ -129,15 +129,15 @@ class SideBar extends HTMLElement {
 	        </h6>
 	        <ul class="nav flex-column mb-2">
 	          <li class="nav-item">
-	            <div class="nav-link" target="about-me">
-	              <i class="fas fa-info-circle"></i>
-	              <span class="nav-text">&nbspAbout</span>
+	            <div class="nav-ext"><a target="_blank" href="https://darkerside.github.io/project/anitime">
+	              <i class="fas fa-globe"></i>
+	              <span class="nav-text">&nbspAniTime</span></a>
 	            </div>
 	          </li>
 	          <li class="nav-item">
-	            <div class="nav-ext"><a target="_blank" href="http://spcoded.herobo.com/project/animini">
-	              <i class="fas fa-globe"></i>
-	              <span class="nav-text">&nbspLive</span></a>
+	            <div class="nav-ext"><a target="_blank" href="https://darkerside.github.io/">
+	              <i class="fas fa-info-circle"></i>
+	              <span class="nav-text">&nbspAbout</span></a>
 	            </div>
 	          </li>
 	          <li class="nav-item">

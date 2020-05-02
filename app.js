@@ -12,6 +12,7 @@ $(document).ready(function() {
         $(".nav-link").removeClass("active");
         $(this).addClass("active");   
         $('anime-list').hide();
+        $('.loading').show();
         document.getElementById('section-title').innerHTML = "" + $(this).attr('target') + " Movies";
         main('' + $(this).attr('target'));
     });
@@ -19,6 +20,7 @@ $(document).ready(function() {
     $("#searchButtonElement").click(function () {
     	$(".nav-link").removeClass("active");
     	$('anime-list').hide();
+    	$('.loading').show();
         document.getElementById("section-title").innerHTML = "Searching " + $("#searchElement").val();
         main('Search');
     });
@@ -27,6 +29,7 @@ $(document).ready(function() {
         if(e.which == 13) {
             $(".nav-link").removeClass("active");
             $('anime-list').hide();
+            $('.loading').show();
             document.getElementById("section-title").innerHTML = "Searching " + $("#searchElement").val();
             main('Search');
         }

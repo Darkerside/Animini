@@ -96,7 +96,6 @@ class AnimeList extends HTMLElement {
           }
 
           .card {
-            color: #5c728a;
             margin-bottom: 1em;
           }
 
@@ -130,6 +129,7 @@ class AnimeList extends HTMLElement {
        </style>
               `;
 
+              $('.loading').hide();
               $('anime-list').show();
 
               if(searchElement.value == ""){

@@ -2,16 +2,6 @@ body {
   font-size: .875rem;
 }
 
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-
 /*
  * Navbar
  */
@@ -70,6 +60,34 @@ main {
 
 .table-responsive {
   overflow-x: inherit!important;
+}
+
+h3.border-bottom {
+  border-bottom: 1px solid #131417!important;
+}
+
+.loading {
+  font-size: 70px !important;
+  color: #d0d0d0;
+}
+
+#loading {
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 1.8s linear infinite;
+  font-size: 70px !important;
+  color: #d0d0d0;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
