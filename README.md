@@ -10,4 +10,4 @@ This web is still in early development, there so much feature i want to add in t
 ### Software Needed
 - Node.js
 
-### (Animini now are integrated as AniTime Menu since AniTime 0.2.4)
+### (Animini now are integrated as AniTime Menu since [AniTime 0.2.4](https://github.com/Darkerside/Anitime))
